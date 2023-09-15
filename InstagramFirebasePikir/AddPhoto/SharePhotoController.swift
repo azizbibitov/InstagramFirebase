@@ -76,7 +76,7 @@ class SharePhotoController: UIViewController {
             
             storageRef.downloadURL(completion: { (downloadURL, err) in
                 if let err = err {
-                    print("Failed to fetch downloadURL:", err)
+                    print("Failed to retrieve downloadURL:", err)
                     return
                 }
                 guard let imageUrl = downloadURL?.absoluteString else { return }
@@ -87,6 +87,8 @@ class SharePhotoController: UIViewController {
             })
         }
     }
+    
+    static let updateFeedNotificationName = NSNotification.Name(rawValue: "UpdateFeed")
     
     fileprivate func saveToDatabaseWithImageUrl(imageUrl: String) {
         guard let postImage = selectedImage else { return }
@@ -108,6 +110,8 @@ class SharePhotoController: UIViewController {
             
             print("Successfully saved post to DB")
             self.dismiss(animated: true, completion: nil)
+            
+            NotificationCenter.default.post(name: SharePhotoController.updateFeedNotificationName, object: nil)
         }
     }
     
