@@ -8,11 +8,11 @@
 import UIKit
 import AVFoundation
 
-class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
+class CameraController: UIViewController, AVCapturePhotoCaptureDelegate, UIViewControllerTransitioningDelegate {
     
     let dismissButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(#imageLiteral(resourceName: "right_arråow_shadow"), for: .normal)
+        button.setImage(#imageLiteral(resourceName: "right_arrow_shadow"), for: .normal)
         button.addTarget(self, action: #selector(handleDismiss), for: .touchUpInside)
         return button
     }()
@@ -31,8 +31,23 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        transitioningDelegate = self
+        
         setupCaptureSession()
         setupHUD()
+    }
+    
+    let customAnimationPresentor = CustomAnimationPresentor()
+    let customAnimationDismisser = CustomAnimationDismisser()
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return customAnimationPresentor
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return customAnimationDismisser
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -63,9 +78,8 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
         #endif
     }
     
-    func photoOutput(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?, previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
-        
-        let imageData = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: photoSampleBuffer!, previewPhotoSampleBuffer: previewPhotoSampleBuffer!)
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+            let imageData = photo.fileDataRepresentation()
         
         let previewImage = UIImage(data: imageData!)
         
@@ -73,14 +87,22 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
         containerView.previewImageView.image = previewImage
         view.addSubview(containerView)
         containerView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
-        
-        /*let previewImageView = UIImageView(image: previewImage)
-        view.addSubview(previewImageView)
-        previewImageView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
-        
-        print("Finish processing photo sample buffer...")*/
-        
     }
+    
+//    func photoOutput(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?, previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
+//
+//        let imageData = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: photoSampleBuffer!, previewPhotoSampleBuffer: previewPhotoSampleBuffer!)
+////        let imageData = photo.fileDataRepresentation()
+//
+//       
+//
+//        /*let previewImageView = UIImageView(image: previewImage)
+//        view.addSubview(previewImageView)
+//        previewImageView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+//
+//        print("Finish processing photo sample buffer...")*/
+//
+//    }
     
     let output = AVCapturePhotoOutput()
     fileprivate func setupCaptureSession() {
