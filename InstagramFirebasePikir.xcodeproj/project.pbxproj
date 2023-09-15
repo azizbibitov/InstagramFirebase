@@ -58,6 +58,8 @@
 		049157802AB46D7F00818A93 /* CustomAnimationPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491577F2AB46D7F00818A93 /* CustomAnimationPresentor.swift */; };
 		049157822AB46D8D00818A93 /* CustomAnimationDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049157812AB46D8D00818A93 /* CustomAnimationDismisser.swift */; };
 		049157842AB4747200818A93 /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049157832AB4747200818A93 /* CommentsController.swift */; };
+		049157862AB47A5000818A93 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049157852AB47A5000818A93 /* Comment.swift */; };
+		049157882AB47AA000818A93 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049157872AB47AA000818A93 /* CommentCell.swift */; };
 		907461BF384C6179F243E23B /* Pods_InstagramFirebasePikir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219A08A4FF3452D34571FAB3 /* Pods_InstagramFirebasePikir.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +117,8 @@
 		0491577F2AB46D7F00818A93 /* CustomAnimationPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationPresentor.swift; sourceTree = "<group>"; };
 		049157812AB46D8D00818A93 /* CustomAnimationDismisser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationDismisser.swift; sourceTree = "<group>"; };
 		049157832AB4747200818A93 /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
+		049157852AB47A5000818A93 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		049157872AB47AA000818A93 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		0B5042669868C51F88D29692 /* Pods-InstagramFirebasePikir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirebasePikir.debug.xcconfig"; path = "Target Support Files/Pods-InstagramFirebasePikir/Pods-InstagramFirebasePikir.debug.xcconfig"; sourceTree = "<group>"; };
 		219A08A4FF3452D34571FAB3 /* Pods_InstagramFirebasePikir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramFirebasePikir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57CF4ECA84B7C05D9718598 /* Pods-InstagramFirebasePikir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirebasePikir.release.xcconfig"; path = "Target Support Files/Pods-InstagramFirebasePikir/Pods-InstagramFirebasePikir.release.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 			children = (
 				049157672AB43F6200818A93 /* Post.swift */,
 				049157702AB4455600818A93 /* User.swift */,
+				049157852AB47A5000818A93 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				0491576C2AB441E600818A93 /* HomeController.swift */,
 				0491576E2AB4420000818A93 /* HomePostCell.swift */,
 				049157832AB4747200818A93 /* CommentsController.swift */,
+				049157872AB47AA000818A93 /* CommentCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -442,7 +448,9 @@
 				042C5B912AB2E39900C1E18B /* Extensions.swift in Sources */,
 				049157782AB44A0000818A93 /* UserSearchCell.swift in Sources */,
 				049157802AB46D7F00818A93 /* CustomAnimationPresentor.swift in Sources */,
+				049157862AB47A5000818A93 /* Comment.swift in Sources */,
 				0491575F2AB4387500818A93 /* PhotoSelectorCell.swift in Sources */,
+				049157882AB47AA000818A93 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
