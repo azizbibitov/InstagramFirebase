@@ -18,7 +18,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
             let layout = UICollectionViewFlowLayout()
             let photoSelectorController = PhotoSelectorController(collectionViewLayout: layout)
             let navController = UINavigationController(rootViewController: photoSelectorController)
-            
+            navController.modalPresentationStyle = .overFullScreen
             present(navController, animated: true, completion: nil)
             
             return false
@@ -37,6 +37,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
             DispatchQueue.main.async {
                 let loginController = LoginController()
                 let navController = UINavigationController(rootViewController: loginController)
+                navController.modalPresentationStyle = .overFullScreen
                 self.present(navController, animated: true, completion: nil)
             }
             
