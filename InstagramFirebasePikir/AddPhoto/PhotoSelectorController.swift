@@ -8,9 +8,6 @@
 import UIKit
 import Photos
 
-import UIKit
-import Photos
-
 class PhotoSelectorController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let cellId = "cellId"
@@ -54,8 +51,6 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
         
         DispatchQueue.global(qos: .background).async {
             allPhotos.enumerateObjects({ (asset, count, stop) in
-                print(count)
-                
                 let imageManager = PHImageManager.default()
                 let targetSize = CGSize(width: 200, height: 200)
                 let options = PHImageRequestOptions()
