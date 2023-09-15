@@ -37,7 +37,6 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
             DispatchQueue.main.async {
                 let loginController = LoginController()
                 let navController = UINavigationController(rootViewController: loginController)
-                navController.modalPresentationStyle = .overFullScreen
                 self.present(navController, animated: true, completion: nil)
             }
             
