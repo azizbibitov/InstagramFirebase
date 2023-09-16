@@ -72,6 +72,7 @@
 		042C5B872AB2E08200C1E18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042C5B892AB2E08200C1E18B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		042C5B902AB2E39900C1E18B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		047E71372AB57FBA009643BF /* InstagramFirebasePikir.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstagramFirebasePikir.entitlements; sourceTree = "<group>"; };
 		0491570D2AB3216200818A93 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = Carthage/Build/nanopb.xcframework; sourceTree = "<group>"; };
 		0491570E2AB3216200818A93 /* RecaptchaInterop.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RecaptchaInterop.xcframework; path = Carthage/Build/RecaptchaInterop.xcframework; sourceTree = "<group>"; };
 		0491570F2AB3216200818A93 /* FirebaseAuthInterop.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAuthInterop.xcframework; path = Carthage/Build/FirebaseAuthInterop.xcframework; sourceTree = "<group>"; };
@@ -178,6 +179,7 @@
 		042C5B7A2AB2E08100C1E18B /* InstagramFirebasePikir */ = {
 			isa = PBXGroup;
 			children = (
+				047E71372AB57FBA009643BF /* InstagramFirebasePikir.entitlements */,
 				049157792AB461E700818A93 /* Camera */,
 				049157742AB449DD00818A93 /* Search */,
 				0491576B2AB441DD00818A93 /* Home */,
@@ -596,9 +598,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InstagramFirebasePikir/InstagramFirebasePikir.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H6RA964W5A;
+				DEVELOPMENT_TEAM = T4V6X2GJGQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramFirebasePikir/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
@@ -631,9 +634,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InstagramFirebasePikir/InstagramFirebasePikir.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H6RA964W5A;
+				DEVELOPMENT_TEAM = T4V6X2GJGQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramFirebasePikir/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
