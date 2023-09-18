@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyAi2MK8y-lV7RZOS6Mh750RFhLU30nw93s</string>
+	<string>AIzaSyCa0H-u2ALPP-qUS9ilw1whMF8hD2t6Nh4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>2672591403</string>
+	<string>545270682903</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>tm.ios.InstagramFirebasePikir</string>
+	<string>tm.ios.InstagramFirebase</string>
 	<key>PROJECT_ID</key>
-	<string>instagramfirebasepikir</string>
+	<string>instagramfirebase-492f0</string>
 	<key>STORAGE_BUCKET</key>
-	<string>instagramfirebasepikir.appspot.com</string>
+	<string>instagramfirebase-492f0.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,8 +25,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:2672591403:ios:214f6bbeaac1a5ad13206e</string>
+	<string>1:545270682903:ios:fb5ef1e991ce85a3e05352</string>
 	<key>DATABASE_URL</key>
-	<string>https://instagramfirebasepikir-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+	<string>https://instagramfirebase-492f0-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>
 </plist>

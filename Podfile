@@ -13,4 +13,5 @@ target 'InstagramFirebasePikir' do
 #  pod 'Firebase/Storage'
 #  pod 'FirebaseAnalytics'
 
+#pod 'FirebaseMessaging'
 end

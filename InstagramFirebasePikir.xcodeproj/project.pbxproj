@@ -34,7 +34,6 @@
 		049157462AB3216900818A93 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0491571F2AB3216500818A93 /* GoogleAppMeasurement.xcframework */; };
 		049157482AB3216900818A93 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157202AB3216500818A93 /* GoogleUtilities.xcframework */; };
 		0491574A2AB3216A00818A93 /* FirebaseAppCheckInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157212AB3216500818A93 /* FirebaseAppCheckInterop.xcframework */; };
-		0491574E2AB3246900818A93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0491574D2AB3246900818A93 /* GoogleService-Info.plist */; };
 		049157502AB328BA00818A93 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491574F2AB328BA00818A93 /* UserProfileController.swift */; };
 		049157522AB328DE00818A93 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049157512AB328DE00818A93 /* MainTabBarController.swift */; };
 		049157552AB32D5D00818A93 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049157542AB32D5D00818A93 /* UserProfileHeader.swift */; };
@@ -60,6 +59,33 @@
 		049157842AB4747200818A93 /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049157832AB4747200818A93 /* CommentsController.swift */; };
 		049157862AB47A5000818A93 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049157852AB47A5000818A93 /* Comment.swift */; };
 		049157882AB47AA000818A93 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049157872AB47AA000818A93 /* CommentCell.swift */; };
+		0494223A2AB87AF500BD6860 /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0491571A2AB3216400818A93 /* FBLPromises.xcframework */; };
+		0494223C2AB87AF500BD6860 /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157162AB3216400818A93 /* FirebaseAnalytics.xcframework */; };
+		0494223E2AB87AF500BD6860 /* FirebaseAnalyticsSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157152AB3216300818A93 /* FirebaseAnalyticsSwift.xcframework */; };
+		049422402AB87AF500BD6860 /* FirebaseAppCheckInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157212AB3216500818A93 /* FirebaseAppCheckInterop.xcframework */; };
+		049422422AB87AF500BD6860 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0491571B2AB3216400818A93 /* FirebaseAuth.xcframework */; };
+		049422442AB87AF500BD6860 /* FirebaseAuthInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0491570F2AB3216200818A93 /* FirebaseAuthInterop.xcframework */; };
+		049422462AB87AF500BD6860 /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157182AB3216400818A93 /* FirebaseCore.xcframework */; };
+		049422482AB87AF500BD6860 /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0491571C2AB3216400818A93 /* FirebaseCoreExtension.xcframework */; };
+		0494224A2AB87AF500BD6860 /* FirebaseCoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157122AB3216300818A93 /* FirebaseCoreInternal.xcframework */; };
+		0494224C2AB87AF500BD6860 /* FirebaseDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0491571D2AB3216400818A93 /* FirebaseDatabase.xcframework */; };
+		0494224E2AB87AF500BD6860 /* FirebaseDatabaseSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157112AB3216300818A93 /* FirebaseDatabaseSwift.xcframework */; };
+		049422502AB87AF500BD6860 /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157192AB3216400818A93 /* FirebaseInstallations.xcframework */; };
+		049422522AB87AF500BD6860 /* FirebaseSharedSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0491571E2AB3216500818A93 /* FirebaseSharedSwift.xcframework */; };
+		049422542AB87AF500BD6860 /* FirebaseStorage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157132AB3216300818A93 /* FirebaseStorage.xcframework */; };
+		049422562AB87AF500BD6860 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0491571F2AB3216500818A93 /* GoogleAppMeasurement.xcframework */; };
+		049422582AB87AF500BD6860 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157142AB3216300818A93 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
+		0494225A2AB87AF500BD6860 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157202AB3216500818A93 /* GoogleUtilities.xcframework */; };
+		0494225C2AB87AF500BD6860 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157172AB3216400818A93 /* GTMSessionFetcher.xcframework */; };
+		0494225E2AB87AF600BD6860 /* leveldb-library.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049157102AB3216300818A93 /* leveldb-library.xcframework */; };
+		049422602AB87AF600BD6860 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0491570D2AB3216200818A93 /* nanopb.xcframework */; };
+		049422622AB87AF600BD6860 /* RecaptchaInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0491570E2AB3216200818A93 /* RecaptchaInterop.xcframework */; };
+		0494226A2AB87AF700BD6860 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049422652AB87AF600BD6860 /* GoogleDataTransport.xcframework */; };
+		0494226C2AB87AF700BD6860 /* FirebaseInAppMessagingSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049422662AB87AF600BD6860 /* FirebaseInAppMessagingSwift.xcframework */; };
+		0494226E2AB87AF700BD6860 /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049422672AB87AF600BD6860 /* FirebaseMessaging.xcframework */; };
+		049422702AB87AF800BD6860 /* FirebaseInAppMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049422682AB87AF600BD6860 /* FirebaseInAppMessaging.xcframework */; };
+		049422722AB87AF800BD6860 /* FirebaseABTesting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049422692AB87AF700BD6860 /* FirebaseABTesting.xcframework */; };
+		049422752AB87C9700BD6860 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049422742AB87C9700BD6860 /* GoogleService-Info.plist */; };
 		907461BF384C6179F243E23B /* Pods_InstagramFirebasePikir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219A08A4FF3452D34571FAB3 /* Pods_InstagramFirebasePikir.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,7 +120,6 @@
 		0491571F2AB3216500818A93 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = Carthage/Build/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
 		049157202AB3216500818A93 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = Carthage/Build/GoogleUtilities.xcframework; sourceTree = "<group>"; };
 		049157212AB3216500818A93 /* FirebaseAppCheckInterop.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAppCheckInterop.xcframework; path = Carthage/Build/FirebaseAppCheckInterop.xcframework; sourceTree = "<group>"; };
-		0491574D2AB3246900818A93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0491574F2AB328BA00818A93 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		049157512AB328DE00818A93 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		049157542AB32D5D00818A93 /* UserProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
@@ -120,6 +145,12 @@
 		049157832AB4747200818A93 /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
 		049157852AB47A5000818A93 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		049157872AB47AA000818A93 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		049422652AB87AF600BD6860 /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleDataTransport.xcframework; path = Carthage/Build/GoogleDataTransport.xcframework; sourceTree = "<group>"; };
+		049422662AB87AF600BD6860 /* FirebaseInAppMessagingSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInAppMessagingSwift.xcframework; path = Carthage/Build/FirebaseInAppMessagingSwift.xcframework; sourceTree = "<group>"; };
+		049422672AB87AF600BD6860 /* FirebaseMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseMessaging.xcframework; path = Carthage/Build/FirebaseMessaging.xcframework; sourceTree = "<group>"; };
+		049422682AB87AF600BD6860 /* FirebaseInAppMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInAppMessaging.xcframework; path = Carthage/Build/FirebaseInAppMessaging.xcframework; sourceTree = "<group>"; };
+		049422692AB87AF700BD6860 /* FirebaseABTesting.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseABTesting.xcframework; path = Carthage/Build/FirebaseABTesting.xcframework; sourceTree = "<group>"; };
+		049422742AB87C9700BD6860 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B5042669868C51F88D29692 /* Pods-InstagramFirebasePikir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirebasePikir.debug.xcconfig"; path = "Target Support Files/Pods-InstagramFirebasePikir/Pods-InstagramFirebasePikir.debug.xcconfig"; sourceTree = "<group>"; };
 		219A08A4FF3452D34571FAB3 /* Pods_InstagramFirebasePikir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramFirebasePikir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57CF4ECA84B7C05D9718598 /* Pods-InstagramFirebasePikir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirebasePikir.release.xcconfig"; path = "Target Support Files/Pods-InstagramFirebasePikir/Pods-InstagramFirebasePikir.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,27 +161,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049422622AB87AF600BD6860 /* RecaptchaInterop.xcframework in Frameworks */,
+				0494226E2AB87AF700BD6860 /* FirebaseMessaging.xcframework in Frameworks */,
 				0491572E2AB3216600818A93 /* FirebaseStorage.xcframework in Frameworks */,
+				0494226A2AB87AF700BD6860 /* GoogleDataTransport.xcframework in Frameworks */,
+				049422522AB87AF500BD6860 /* FirebaseSharedSwift.xcframework in Frameworks */,
 				049157402AB3216800818A93 /* FirebaseCoreExtension.xcframework in Frameworks */,
+				049422722AB87AF800BD6860 /* FirebaseABTesting.xcframework in Frameworks */,
+				049422562AB87AF500BD6860 /* GoogleAppMeasurement.xcframework in Frameworks */,
 				049157482AB3216900818A93 /* GoogleUtilities.xcframework in Frameworks */,
+				049422582AB87AF500BD6860 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
 				049157322AB3216600818A93 /* FirebaseAnalyticsSwift.xcframework in Frameworks */,
 				0491573E2AB3216800818A93 /* FirebaseAuth.xcframework in Frameworks */,
+				049422482AB87AF500BD6860 /* FirebaseCoreExtension.xcframework in Frameworks */,
+				049422502AB87AF500BD6860 /* FirebaseInstallations.xcframework in Frameworks */,
+				0494223C2AB87AF500BD6860 /* FirebaseAnalytics.xcframework in Frameworks */,
 				0491574A2AB3216A00818A93 /* FirebaseAppCheckInterop.xcframework in Frameworks */,
+				049422402AB87AF500BD6860 /* FirebaseAppCheckInterop.xcframework in Frameworks */,
+				049422702AB87AF800BD6860 /* FirebaseInAppMessaging.xcframework in Frameworks */,
+				0494224C2AB87AF500BD6860 /* FirebaseDatabase.xcframework in Frameworks */,
+				049422462AB87AF500BD6860 /* FirebaseCore.xcframework in Frameworks */,
+				0494223A2AB87AF500BD6860 /* FBLPromises.xcframework in Frameworks */,
 				907461BF384C6179F243E23B /* Pods_InstagramFirebasePikir.framework in Frameworks */,
+				0494225C2AB87AF500BD6860 /* GTMSessionFetcher.xcframework in Frameworks */,
+				0494224E2AB87AF500BD6860 /* FirebaseDatabaseSwift.xcframework in Frameworks */,
 				049157382AB3216700818A93 /* FirebaseCore.xcframework in Frameworks */,
 				049157462AB3216900818A93 /* GoogleAppMeasurement.xcframework in Frameworks */,
+				0494223E2AB87AF500BD6860 /* FirebaseAnalyticsSwift.xcframework in Frameworks */,
 				0491573A2AB3216700818A93 /* FirebaseInstallations.xcframework in Frameworks */,
 				0491572A2AB3216500818A93 /* FirebaseDatabaseSwift.xcframework in Frameworks */,
+				0494224A2AB87AF500BD6860 /* FirebaseCoreInternal.xcframework in Frameworks */,
+				0494226C2AB87AF700BD6860 /* FirebaseInAppMessagingSwift.xcframework in Frameworks */,
 				049157242AB3216500818A93 /* RecaptchaInterop.xcframework in Frameworks */,
 				049157362AB3216700818A93 /* GTMSessionFetcher.xcframework in Frameworks */,
+				049422602AB87AF600BD6860 /* nanopb.xcframework in Frameworks */,
 				0491573C2AB3216700818A93 /* FBLPromises.xcframework in Frameworks */,
 				049157342AB3216600818A93 /* FirebaseAnalytics.xcframework in Frameworks */,
 				049157302AB3216600818A93 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
+				0494225E2AB87AF600BD6860 /* leveldb-library.xcframework in Frameworks */,
+				0494225A2AB87AF500BD6860 /* GoogleUtilities.xcframework in Frameworks */,
 				049157422AB3216800818A93 /* FirebaseDatabase.xcframework in Frameworks */,
+				049422542AB87AF500BD6860 /* FirebaseStorage.xcframework in Frameworks */,
 				049157442AB3216900818A93 /* FirebaseSharedSwift.xcframework in Frameworks */,
 				049157262AB3216500818A93 /* FirebaseAuthInterop.xcframework in Frameworks */,
 				049157222AB3216500818A93 /* nanopb.xcframework in Frameworks */,
 				049157282AB3216500818A93 /* leveldb-library.xcframework in Frameworks */,
+				049422422AB87AF500BD6860 /* FirebaseAuth.xcframework in Frameworks */,
+				049422442AB87AF500BD6860 /* FirebaseAuthInterop.xcframework in Frameworks */,
 				0491572C2AB3216600818A93 /* FirebaseCoreInternal.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +270,7 @@
 				042C5B842AB2E08200C1E18B /* Assets.xcassets */,
 				042C5B862AB2E08200C1E18B /* LaunchScreen.storyboard */,
 				042C5B892AB2E08200C1E18B /* Info.plist */,
-				0491574D2AB3246900818A93 /* GoogleService-Info.plist */,
+				049422742AB87C9700BD6860 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -301,6 +358,11 @@
 		3EDEFDE478119978E801066C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				049422692AB87AF700BD6860 /* FirebaseABTesting.xcframework */,
+				049422682AB87AF600BD6860 /* FirebaseInAppMessaging.xcframework */,
+				049422662AB87AF600BD6860 /* FirebaseInAppMessagingSwift.xcframework */,
+				049422672AB87AF600BD6860 /* FirebaseMessaging.xcframework */,
+				049422652AB87AF600BD6860 /* GoogleDataTransport.xcframework */,
 				0491571A2AB3216400818A93 /* FBLPromises.xcframework */,
 				049157162AB3216400818A93 /* FirebaseAnalytics.xcframework */,
 				049157152AB3216300818A93 /* FirebaseAnalyticsSwift.xcframework */,
@@ -387,9 +449,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				042C5B882AB2E08200C1E18B /* LaunchScreen.storyboard in Resources */,
+				049422752AB87C9700BD6860 /* GoogleService-Info.plist in Resources */,
 				042C5B852AB2E08200C1E18B /* Assets.xcassets in Resources */,
 				042C5B832AB2E08100C1E18B /* Main.storyboard in Resources */,
-				0491574E2AB3246900818A93 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,10 +663,12 @@
 				CODE_SIGN_ENTITLEMENTS = InstagramFirebasePikir/InstagramFirebasePikir.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T4V6X2GJGQ;
+				DEVELOPMENT_TEAM = H6RA964W5A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramFirebasePikir/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We would like to access the camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We would like access to your photos right now.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -620,7 +684,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tm.ios.InstagramFirebasePikir;
+				PRODUCT_BUNDLE_IDENTIFIER = tm.ios.InstagramFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -637,10 +701,12 @@
 				CODE_SIGN_ENTITLEMENTS = InstagramFirebasePikir/InstagramFirebasePikir.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T4V6X2GJGQ;
+				DEVELOPMENT_TEAM = H6RA964W5A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramFirebasePikir/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We would like to access the camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We would like access to your photos right now.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -656,7 +722,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tm.ios.InstagramFirebasePikir;
+				PRODUCT_BUNDLE_IDENTIFIER = tm.ios.InstagramFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
