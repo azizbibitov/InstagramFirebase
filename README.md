@@ -1,3 +1,3 @@
 # InstagramFirebase
-Instagram app with Firebase backend side. iOS swift
+Instagram app with Firebase. iOS swift
 Programmatical UIKit with Firebase LBTA Course
